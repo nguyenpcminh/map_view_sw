@@ -52,6 +52,7 @@ class MapViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        addAnnotation()
         bindingCoordinate()
         bindingBtnGet()
         bindingDesination()
@@ -62,8 +63,16 @@ class MapViewController: UIViewController {
         vm.stopUpdateLocation()
     }
     
+    private func addAnnotation() {
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 35.658581, longitude: 139.745438)
+        annotation.title = "Thap tokyo"
+        
+        mapView.addAnnotation(annotation)
+    }
+    
     private func centerView(coordinate center: CLLocationCoordinate2D) {
-        let region = MKCoordinateRegion(center: center, latitudinalMeters: 500, longitudinalMeters: 500)
+        let region = MKCoordinateRegion(center: center, latitudinalMeters: 5000, longitudinalMeters: 5000)
         
         mapView.setRegion(region, animated: true)
     }
