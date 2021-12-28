@@ -1,0 +1,6 @@
+framework module Pods_map_view_map_viewUITests {
+  umbrella header "Pods-map_view-map_viewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

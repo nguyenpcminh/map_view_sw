@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-map_view-map_viewUITests/Pods-map_view-map_viewUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Layoutless/Layoutless.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
